@@ -15,19 +15,7 @@ The chatbot classifies user queries into predefined intents and responds with ap
 
 ## System Architecture
 
-User Input
-↓
-Tokenization & Lemmatization (NLTK)
-↓
-Bag-of-Words Vectorization
-↓
-Neural Network Classifier (Keras)
-↓
-Intent Prediction
-↓
-Response Selection
-↓
-GUI Output
+User Input -> Tokenization & Lemmatization (NLTK) -> Bag-of-Words Vectorization -> Neural Network Classifier (Keras) -> Intent Prediction -> Response Selection -> GUI Output
 
 
 ---
