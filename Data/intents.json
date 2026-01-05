@@ -1,0 +1,284 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Is anyone there?",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Hey there"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! How may I help you?",
+        "Hey! What can I do for you?",
+        "Welcome! How can I assist you?"
+      ],
+      "context-set": ""
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Exit",
+        "Quit",
+        "Talk to you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later!",
+        "Thanks for contacting us. Take care!",
+        "Bye! Feel free to reach out again."
+      ],
+      "context-set": ""
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Thanks a lot",
+        "Appreciate it",
+        "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!",
+        "Glad I could assist you."
+      ],
+      "context-set": ""
+    },
+
+
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name?",
+        "Who are you?",
+        "Do you have a name?",
+        "What should I call you?"
+      ],
+      "responses": [
+        "I'm your virtual customer support assistant.",
+        "I'm an AI-powered chatbot here to help you.",
+        "You can call me your support assistant!"
+      ],
+      "context-set": ""
+    },
+
+    {
+      "tag": "about_bot",
+      "patterns": [
+        "What do you do?",
+        "Tell me about yourself",
+        "How can you help me?"
+      ],
+      "responses": [
+        "I help you with orders, payments, refunds, and general support queries.",
+        "I'm designed to assist you with customer service-related issues.",
+        "I can help track orders, resolve payment issues, and connect you to support."
+      ],
+      "context-set": ""
+    },
+
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order?",
+        "Track my order",
+        "Order status",
+        "Has my order been shipped?",
+        "When will my order arrive?"
+      ],
+      "responses": [
+        "Please provide your order ID so I can check the status.",
+        "Sure! Share your order number and I’ll track it for you.",
+        "I can help with that. Kindly tell me your order ID."
+      ],
+      "context-set": "awaiting_order_id"
+    },
+
+    {
+      "tag": "order_cancellation",
+      "patterns": [
+        "Cancel my order",
+        "I want to cancel my purchase",
+        "Can I cancel my order?"
+      ],
+      "responses": [
+        "Please share your order ID to check cancellation eligibility.",
+        "I can help cancel your order if it hasn’t been shipped yet.",
+        "Let me know your order number to proceed."
+      ],
+      "context-set": "awaiting_order_id"
+    },
+
+    {
+      "tag": "refund_status",
+      "patterns": [
+        "Where is my refund?",
+        "Refund status",
+        "I haven't received my refund",
+        "When will I get my refund?"
+      ],
+      "responses": [
+        "Refunds usually take 5–7 business days. Please share your order ID.",
+        "I’ll check your refund status once you provide the order number.",
+        "Kindly provide the order ID to track your refund."
+      ],
+      "context-set": "awaiting_order_id"
+    },
+
+    {
+      "tag": "payment_issue",
+      "patterns": [
+        "Payment failed",
+        "Money deducted but order not placed",
+        "Charged twice",
+        "Transaction failed",
+        "Payment issue"
+      ],
+      "responses": [
+        "I'm sorry about that. Please provide your transaction ID.",
+        "Let me help resolve this. Kindly share the payment reference number.",
+        "I can assist you once I have your transaction details."
+      ],
+      "context-set": "awaiting_transaction_id"
+    },
+
+    {
+      "tag": "account_issue",
+      "patterns": [
+        "I can't log in",
+        "Forgot my password",
+        "Account locked",
+        "Login issue"
+      ],
+      "responses": [
+        "You can reset your password using the 'Forgot Password' option.",
+        "If the issue persists, I can connect you with support.",
+        "Let me know if you need help recovering your account."
+      ],
+      "context-set": ""
+    },
+
+    {
+      "tag": "address_change",
+      "patterns": [
+        "Change delivery address",
+        "Update shipping address",
+        "Wrong address provided"
+      ],
+      "responses": [
+        "Address changes are possible before shipment. Please share your order ID.",
+        "I’ll check if your address can be updated.",
+        "Let me know your order number to proceed."
+      ],
+      "context-set": "awaiting_order_id"
+    },
+
+    {
+      "tag": "delivery_delay",
+      "patterns": [
+        "My order is delayed",
+        "Delivery delay",
+        "Order not delivered yet"
+      ],
+      "responses": [
+        "I apologize for the delay. Please provide your order ID.",
+        "Let me check what’s causing the delay.",
+        "I’ll track your order and update you."
+      ],
+      "context-set": "awaiting_order_id"
+    },
+
+    {
+      "tag": "return_policy",
+      "patterns": [
+        "What is your return policy?",
+        "How do I return an item?",
+        "Can I return my order?"
+      ],
+      "responses": [
+        "Items can be returned within 7 days of delivery if eligible.",
+        "I can guide you through the return process.",
+        "Please ensure the item meets our return conditions."
+      ],
+      "context-set": ""
+    },
+
+    {
+      "tag": "complaint",
+      "patterns": [
+        "I want to file a complaint",
+        "Bad service",
+        "I'm unhappy",
+        "This is unacceptable"
+      ],
+      "responses": [
+        "I'm really sorry to hear that. Please describe the issue.",
+        "Your concern matters to us. I'll make sure it's addressed.",
+        "Let me know what went wrong so I can help."
+      ],
+      "context-set": ""
+    },
+
+    {
+      "tag": "contact_support",
+      "patterns": [
+        "Talk to customer care",
+        "Speak to an agent",
+        "Human support",
+        "Contact support"
+      ],
+      "responses": [
+        "Sure, I’ll connect you with a customer support agent.",
+        "Please wait while I transfer you to a human representative.",
+        "Your request is being forwarded to our support team."
+      ],
+      "context-set": ""
+    },
+
+    {
+      "tag": "business_hours",
+      "patterns": [
+        "What are your working hours?",
+        "Support timings",
+        "Customer care hours"
+      ],
+      "responses": [
+        "Our support team is available from 9 AM to 6 PM, Monday to Saturday.",
+        "Customer support operates between 9 AM and 6 PM."
+      ],
+      "context-set": ""
+    },
+
+    {
+      "tag": "fallback",
+      "patterns": [
+        "asdfghjkl",
+        "I don't understand",
+        "???",
+        "Random text",
+        "What"
+      ],
+      "responses": [
+        "I'm sorry, I didn't quite understand that.",
+        "Could you please rephrase your question?",
+        "I'm not sure I got that. Can you try again?",
+        "Let me know how I can help you."
+      ],
+      "context-set": ""
+    }
+
+  ]
+}
