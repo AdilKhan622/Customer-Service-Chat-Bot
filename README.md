@@ -24,6 +24,7 @@ User Input -> Tokenization & Lemmatization (NLTK) -> Bag-of-Words Vectorization 
 
 ### 1. Create and activate Conda environment
 conda create -n chatbot python=3.10
+
 conda activate chatbot
 
 ### 2. Install required dependencies
@@ -36,6 +37,8 @@ nltk.download("wordnet")
 
 ## Author 
 Adil Ahmed Khan
+
 Electronics and Computer Engineering
+
 Customer Service Chatbot - Mini NLP project
 
