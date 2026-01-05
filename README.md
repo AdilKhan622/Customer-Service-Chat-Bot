@@ -32,7 +32,9 @@ pip install tensorflow nltk numpy
 
 ### 3. Download NLTK resources
 import nltk
+
 nltk.download("punkt")
+
 nltk.download("wordnet")
 
 ## Author 
